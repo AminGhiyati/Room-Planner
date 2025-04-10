@@ -11,11 +11,10 @@ public class ProgramMain {
         PaintPanel paintPanel = new PaintPanel();
 
         frame.add(paintPanel);
-        frame.setSize(550, 250);
+        frame.setSize(720, 720);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
 }
 
-// das ist ein kommentar
