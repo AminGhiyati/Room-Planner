@@ -5,8 +5,10 @@ import java.awt.*;
 public class Chair {
     private int x;
     private int y;
+    private Color color;
 
-    public Chair() {
+    public Chair(Color color) {
+        this.color = color;
         this.x = 0;
         this.y = 0;
     }
@@ -16,11 +18,8 @@ public class Chair {
     }
 
     public void setX(int x) {
-        if (x >= 0) {
-            this.x = x;
-        } else {
-            throw new IllegalArgumentException("X darf nicht negativ sein.");
-        }
+        if (x >= 0) this.x = x;
+        else throw new IllegalArgumentException("X darf nicht negativ sein.");
     }
 
     public int getY() {
@@ -28,15 +27,12 @@ public class Chair {
     }
 
     public void setY(int y) {
-        if (y >= 0) {
-            this.y = y;
-        } else {
-            throw new IllegalArgumentException("Y darf nicht negativ sein.");
-        }
+        if (y >= 0) this.y = y;
+        else throw new IllegalArgumentException("Y darf nicht negativ sein.");
     }
 
     public void paintChair(Graphics2D graphic2d) {
-        graphic2d.setColor(Color.BLUE);
+        graphic2d.setColor(color);
 
         //oben
         graphic2d.drawLine(70 + x, 30 + y, 170 + x, 30 + y);
