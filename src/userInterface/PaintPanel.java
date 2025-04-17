@@ -14,10 +14,15 @@ public class PaintPanel extends JPanel {
         Graphics2D graphic2d =  (Graphics2D) g;
 
         Chair chair = new Chair();
+        chair.setX(100);
+        chair.setY(200);
         chair.paintChair(graphic2d);
 
         Desk desk = new Desk();
+        desk.setX(100);
+        desk.setY(200);
         desk.paintDesk(graphic2d);
     }
 
 }
+
