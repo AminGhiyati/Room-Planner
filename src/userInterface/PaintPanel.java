@@ -12,10 +12,11 @@ import java.util.Random;
 public class PaintPanel extends JPanel {
     private static final long serialVersionUID = 1L;
 
-    private ArrayList<Furniture> furnitureList;
+
+    private ArrayList<Furniture> myFurnitures;
 
     public PaintPanel() {
-        furnitureList = new ArrayList<>();
+        myFurnitures = new ArrayList<>();
 
         int numChairs = 2;
         int numDesks = 2;
@@ -26,24 +27,22 @@ public class PaintPanel extends JPanel {
             Chair chair = new Chair(Color.BLUE);
             chair.setX(rand.nextInt(551));
             chair.setY(rand.nextInt(451));
-            furnitureList.add(chair);
+            myFurnitures.add(chair);
         }
 
         for (int i = 0; i < numDesks; i++) {
             Desk desk = new Desk(Color.RED);
             desk.setX(rand.nextInt(551));
             desk.setY(rand.nextInt(451));
-            furnitureList.add(desk);
+            myFurnitures.add(desk);
         }
     }
 
     @Override
     public void paint(Graphics g) {
-
         Graphics2D graphic2d = (Graphics2D) g;
 
-
-        for (Furniture furniture : furnitureList) {
+        for (Furniture furniture : myFurnitures) {
             furniture.paint(graphic2d);
         }
     }
