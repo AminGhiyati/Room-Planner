@@ -6,17 +6,20 @@ import labTasks.Furniture;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
 import java.util.Random;
+import labTasks.FurnitureList;
+
 
 public class PaintPanel extends JPanel {
     private static final long serialVersionUID = 1L;
 
 
-    private ArrayList<Furniture> myFurnitures;
+    private FurnitureList myFurnitures;
+
 
     public PaintPanel() {
-        myFurnitures = new ArrayList<>();
+        myFurnitures = new FurnitureList();
+
 
         int numChairs = 2;
         int numDesks = 2;
@@ -46,10 +49,15 @@ public class PaintPanel extends JPanel {
 
     @Override
     public void paint(Graphics g) {
+        super.paint(g); //
         Graphics2D graphic2d = (Graphics2D) g;
+
+
+        myFurnitures.shiftAllElements(20, 20);
 
         for (Furniture furniture : myFurnitures) {
             furniture.paint(graphic2d);
         }
     }
+
 }
