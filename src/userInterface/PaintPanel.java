@@ -53,11 +53,15 @@ public class PaintPanel extends JPanel {
         Graphics2D graphic2d = (Graphics2D) g;
 
 
-        myFurnitures.shiftAllElements(20, 20);
 
         for (Furniture furniture : myFurnitures) {
             furniture.paint(graphic2d);
         }
     }
+
+    public void shiftFurniture() {
+        myFurnitures.shiftAllElements(10, 10);
+    }
+
 
 }
