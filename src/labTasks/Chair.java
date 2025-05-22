@@ -6,6 +6,8 @@ public class Chair extends AbstractFurniture {
 
     public Chair(Color color) {
         super(color);
+        // Boilerplate: Dieser Konstruktor macht nichts anderes als den Wert weiterzugeben.
+        // Wiederholt sich in jeder Klasse.
     }
 
     @Override

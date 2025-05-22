@@ -6,6 +6,8 @@ public class Desk extends AbstractFurniture {
 
     public Desk(Color color) {
         super(color);
+        // Boilerplate: Genau wie bei Chair.
+        // Kann man sich sparen, wenn nichts anderes im Konstruktor steht.
     }
 
     @Override

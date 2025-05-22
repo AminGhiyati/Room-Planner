@@ -23,6 +23,9 @@ public abstract class AbstractFurniture implements Furniture {
     public void setX(int x) {
         if (x >= 0) this.x = x;
         else throw new IllegalArgumentException("X darf nicht negativ sein.");
+        // Kein klassischer Boilerplate, aber Getter/Setter sind in Java Standard und kommen oft vor.
+        // Trotzdem ist es etwas sich wiederholender Code.
+
     }
 
     @Override
@@ -34,6 +37,8 @@ public abstract class AbstractFurniture implements Furniture {
     public void setY(int y) {
         if (y >= 0) this.y = y;
         else throw new IllegalArgumentException("Y darf nicht negativ sein.");
+        // Kein klassischer Boilerplate, aber Getter/Setter sind in Java Standard und kommen oft vor.
+        // Trotzdem ist es etwas sich wiederholender Code.
     }
 
     @Override

@@ -28,6 +28,9 @@ public class PaintPanel extends JPanel {
             chair.setX(rand.nextInt(551));
             chair.setY(rand.nextInt(451));
             myFurnitures.add(chair);
+            // Boilerplate: Das Erstellen, Positionieren und Hinzufügen wiederholt sich.
+            // Man könnte eine Hilfsmethode schreiben.
+
         }
 
         for (int i = 0; i < numDesks; i++) {
@@ -35,8 +38,11 @@ public class PaintPanel extends JPanel {
             desk.setX(rand.nextInt(551));
             desk.setY(rand.nextInt(451));
             myFurnitures.add(desk);
+            // Boilerplate: Das Erstellen, Positionieren und Hinzufügen wiederholt sich.
+            // Man könnte eine Hilfsmethode schreiben.
         }
     }
+
 
     @Override
     public void paint(Graphics g) {
