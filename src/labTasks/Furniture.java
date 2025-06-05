@@ -1,6 +1,8 @@
 package labTasks;
 
 import java.awt.Graphics2D;
+import java.awt.Dimension;
+
 
 public interface Furniture {
     int getX();
@@ -8,4 +10,6 @@ public interface Furniture {
     int getY();
     void setY(int y);
     void paint(Graphics2D g2d);
+
+    Dimension getSize();
 }

@@ -23,4 +23,11 @@ public class Chair extends AbstractFurniture {
         graphic2d.drawLine(170 + x, 120 + y, 180 + x, 205 + y);
         graphic2d.drawLine(160 + x, 120 + y, 170 + x, 205 + y);
     }
+
+    @Override
+    public Dimension getSize() {
+        return new Dimension(120, 205);
+    }
+
+
 }

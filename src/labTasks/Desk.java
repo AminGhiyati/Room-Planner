@@ -21,4 +21,9 @@ public class Desk extends AbstractFurniture {
         graphic2d.drawLine(145 + x, 15 + y, 145 + x, 30 + y);
         graphic2d.drawLine(30 + x, 70 + y, 130 + x, 70 + y);
     }
+
+    @Override
+    public Dimension getSize() {
+        return new Dimension(130, 130);
+    }
 }
