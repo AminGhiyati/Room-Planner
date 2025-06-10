@@ -24,6 +24,6 @@ public class Desk extends AbstractFurniture {
 
     @Override
     public Dimension getSize() {
-        return new Dimension(130, 130);
+        return new Dimension(150, 150);
     }
 }

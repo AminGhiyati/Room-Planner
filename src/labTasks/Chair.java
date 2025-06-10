@@ -26,7 +26,7 @@ public class Chair extends AbstractFurniture {
 
     @Override
     public Dimension getSize() {
-        return new Dimension(120, 205);
+        return new Dimension(150, 150);
     }
 
 
